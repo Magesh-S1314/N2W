@@ -13,6 +13,8 @@
 		B943D40424E63FAE00C2A6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B943D40324E63FAE00C2A6B7 /* Assets.xcassets */; };
 		B943D40724E63FAE00C2A6B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B943D40624E63FAE00C2A6B7 /* Preview Assets.xcassets */; };
 		B943D40A24E63FAE00C2A6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B943D40824E63FAE00C2A6B7 /* LaunchScreen.storyboard */; };
+		B943D41224E6515A00C2A6B7 /* ConvertN2W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943D41124E6515A00C2A6B7 /* ConvertN2W.swift */; };
+		B943D41424E65A3B00C2A6B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943D41324E65A3B00C2A6B7 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B943D40624E63FAE00C2A6B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B943D40924E63FAE00C2A6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B943D40B24E63FAE00C2A6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B943D41124E6515A00C2A6B7 /* ConvertN2W.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertN2W.swift; sourceTree = "<group>"; };
+		B943D41324E65A3B00C2A6B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B943D40824E63FAE00C2A6B7 /* LaunchScreen.storyboard */,
 				B943D40B24E63FAE00C2A6B7 /* Info.plist */,
 				B943D40524E63FAE00C2A6B7 /* Preview Content */,
+				B943D41124E6515A00C2A6B7 /* ConvertN2W.swift */,
+				B943D41324E65A3B00C2A6B7 /* Helper.swift */,
 			);
 			path = N2W;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			files = (
 				B943D3FE24E63FA400C2A6B7 /* AppDelegate.swift in Sources */,
 				B943D40024E63FA400C2A6B7 /* SceneDelegate.swift in Sources */,
+				B943D41424E65A3B00C2A6B7 /* Helper.swift in Sources */,
 				B943D40224E63FA400C2A6B7 /* ContentView.swift in Sources */,
+				B943D41224E6515A00C2A6B7 /* ConvertN2W.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

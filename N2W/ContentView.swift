@@ -7,15 +7,27 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @ObservedObject var input = NumbersOnly()
+    
     var body: some View {
-        Text("Hello World")
+        VStack{
+            TextField("Enter the number", text: $input.value)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .font(.largeTitle)
+                .padding()
+                
+            Text("\(input.num)").frame(maxWidth: .infinity, alignment: .leading).padding()
+
+        }.padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(input: NumbersOnly())
     }
 }
