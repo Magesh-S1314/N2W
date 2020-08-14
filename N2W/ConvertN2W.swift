@@ -8,14 +8,14 @@
 
 public class ConvertN2W {
   
-    private static let one: [String] = [ "", "one ", "two ", "three ", "four ",
+    private static let A1: [String] = [ "", "one ", "two ", "three ", "four ",
                             "five ", "six ", "seven ", "eight ",
                             "nine ", "ten ", "eleven ", "twelve ",
                             "thirteen ", "fourteen ", "fifteen ",
                             "sixteen ", "seventeen ", "eighteen ",
                             "nineteen " ]
   
-    private static let ten: [String] = [ "", "", "twenty ", "thirty ", "forty ",
+    private static let A2: [String] = [ "", "", "twenty ", "thirty ", "forty ",
                             "fifty ", "sixty ", "seventy ", "eighty ",
                             "ninety " ]
   
@@ -23,10 +23,10 @@ public class ConvertN2W {
     {
         var str: String = "";
         if (n > 19) {
-            str += ten[n / 10] + one[n % 10];
+            str += A2[n / 10] + A1[n % 10];
         }
         else {
-            str += one[n];
+            str += A1[n];
         }
   
         if (n != 0) {
