@@ -21,24 +21,24 @@ public class ConvertN2W {
   
     private static func numToWords(n: Int, s: String) -> String
     {
-        var str: String = "";
+        var str: String = ""
         if (n > 19) {
             str += A2[n / 10] + A1[n % 10];
         }
         else {
-            str += A1[n];
+            str += A1[n]
         }
   
         if (n != 0) {
-            str += s;
+            str += s
         }
   
-        return str;
+        return str
     }
   
     public static func convertToWords(n: Int) -> String
     {
-        var out: String = "";
+        var out: String = ""
   
         switch n {
             
@@ -52,15 +52,15 @@ public class ConvertN2W {
                 return "above one hundred crore"
             
         case let x where x > 0:
-            out += numToWords(n: (n / 10000000), s: "crore ");
-            out += numToWords(n: ((n / 100000) % 100), s: "lakh ");
-            out += numToWords(n: ((n / 1000) % 100), s: "thousand ");
-            out += numToWords(n: ((n / 100) % 10), s: "hundred ");
+            out += numToWords(n: (n / 10000000), s: "crore ")
+            out += numToWords(n: ((n / 100000) % 100), s: "lakh ")
+            out += numToWords(n: ((n / 1000) % 100), s: "thousand ")
+            out += numToWords(n: ((n / 100) % 10), s: "hundred ")
             if (n > 100 && n % 100 > 0) {
-            out += "and ";
+            out += "and "
             }
-            out += numToWords(n: (n % 100), s: "");
-            return out;
+            out += numToWords(n: (n % 100), s: "")
+            return out
             
         default:
             return "zero"
